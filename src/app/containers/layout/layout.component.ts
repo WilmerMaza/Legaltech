@@ -8,19 +8,15 @@ import { NavbarComponent } from '../navbar/navbar.component';
   standalone: true,
   imports: [NavbarComponent, FooterPageComponent, RouterModule],
   template: `
-    <section>
-      <nav>
-        <app-navbar />
-      </nav>
-
-      <main class="container-fluid h-100 w-100 min-vh-100 min-vw-100">
-        <router-outlet />
-      </main>
-
-      <footer>
-        <app-footer-page />
-      </footer>
-    </section>
+    <nav class="w-100 position-absolute z-2" aria-label="Navegación principal">
+      <app-navbar></app-navbar>
+    </nav>
+    <main role="main" class="h-100 w-100 min-vh-100 min-vw-100">
+      <router-outlet></router-outlet>
+    </main>
+    <footer role="contentinfo">
+      <app-footer-page></app-footer-page>
+    </footer>
   `,
   styleUrl: './layout.component.scss',
 })
