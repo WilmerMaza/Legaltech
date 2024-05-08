@@ -1,74 +1,282 @@
-<footer class="text-white  p-4" id="footer-content">
-  <table>
-    <caption>
-      © 2024 LegalTech | Todos los derechos reservados
-    </caption>
-    <thead>
-   
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row"><mat-icon class="icon">call</mat-icon></th>
-        <td>
-          <a href="tel:3003534323" class="text-decoration-none text-white"
-            ><span>300 3534323 </span></a
-          >
-          -
-          <a href="tel:3226654345" class="text-decoration-none text-white"
-            ><span>322 6654345</span></a
-          >
-        </td>
-      </tr>
-      <tr>
-        <th scope="row">
-          <svg
-            width="12"
-            height="18"
-            viewBox="0 0 12 18"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <rect
-              width="12"
-              height="18"
-              fill="url(#pattern0_350_650)"
-            />
-            <defs>
-              <pattern
-                id="pattern0_350_650"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
-                <use
-                  xlink:href="#image0_350_650"
-                  transform="matrix(0.0111111 0 0 0.00735346 0 0.169095)"
-                />
-              </pattern>
-              <image
-                id="image0_350_650"
-                width="200"
-                height="200"
-                xlink:href="data:image/png;base64,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"
+<div class="text-white p-4" id="footer-content">
+  <section class="logo position-relative">
+    <picture>
+      <source srcset="../../../assets/img/logoLegalpc.webp" type="image/webp" />
+      <img
+        src="../../../assets/img/logoLegalmovil.webp"
+        alt="Logo de LegalTech, Abogados Digitales SAS"
+        class="imgLogo absolute-position"
+        loading="lazy"
+      />
+    </picture>
+      <div class="text-container">
+        <h2 class="company-name">LEGALTECH</h2>
+        <p class="company-desc ">ABOGADOS DIGITALES S.A.S</p>
+      </div>
+  </section>
+  <section class="links">
+    <table>
+      <thead></thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <svg
+              width="24"
+              height="30"
+              viewBox="0 0 12 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect
+                width="11.4982"
+                height="17.3738"
+                fill="url(#pattern0_350_649)"
               />
-            </defs>
-          </svg>
-        </th>
-        <td>Barrio perdido por la esquina de doña juana cll 23 #26-07</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <th scope="row"><mat-icon class="icon">mail</mat-icon></th>
-        <td>
+              <defs>
+                <pattern
+                  id="pattern0_350_649"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_350_649"
+                    transform="matrix(0.0111111 0 0 0.00735346 0 0.169095)"
+                  />
+                </pattern>
+                <image
+                  id="image0_350_649"
+                  width="90"
+                  height="90"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAYAAAA4qEECAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEtklEQVR4nO2cSYgdVRSGyxFHnFCM6MIhIoIYN0GcQBCjKCIIQQMxCIo44cKVGwdwEyTBiBtFiKbV4D2nXkIkoiC0EHFYqGhcCA6xI01MvzrnvU7UJJr0L/e9xGDobutVvcq5Ve9+cJdddf//nT5177lDkkQikUgkEolEIpHIqIBXcYIylivhA2G0hSHCeCtLcaF13xpDRrhVCD8pA0c2IfyyO8V51n2sNXgWxypjtRBmZjNZD7f11n2tLXA4UQn8PwbjYFTPKOFG6z7XDjgcp4x385ishxphK8ZxvHXfa4USVg5kMv/bHrHue23QFHfkyMlzpZCs63C2tYbgmdyEU4Txc8FoRs9sxivWOoJHGU+XMVn7Ru9Xh6ustYQ+ypgsa7T2zR631hMswlgyDJP1cL5eaq0pSITw0jCNVsaEz/nWuoJDGVuGbDSE8Ly1ruBQxo5hG62MPR2Hi621BYUQ9lZgNPw03lpbUCjjz0qM5t4oZIm1vmDws7qqjFbGd7EOchBlfFGh0RCHB21DKRCEMVap0YyPrDUGgRIeq9jor6w1BsFUC5dXabQyXrPWGAxlK3c6VzQT/s4crrTWFwxCeK6iaF5trS0oZAMu6pU5h2ky4Td1OMNaW3AoYfOQo3m5taYgEcJ1Q4zmTwAcY60pWJTxYekPIGN/x2GRtZagyVJcO4Roft1aRy1QxjslI/p6aw21YCrFAmV0ixrdiXXo/GiKJwpHdYq7KoyDRm4NK1rV+9T/vbWG2tBt4VIl7Cr4QVxp3f9aIYSHSuTqB6z7XyuU4QqavSdzWGzd/9ow3cI5QthWMIX86kcx1hpqg6a4Wgl/FIzsb7tv4yxrDbVBGcsKD/kIn+1Yh1OtNdQGJawqarYw3osr4jnxRvljcFrc7DdjVS8n7Y043S+4Fjab8HI0OydTKRYUHon0I3vMHxTN+76RputwmTCmyuTsuL03J+pwQ8m9e1s6G3BmtSHREIRwuzD2lYjsb9obcUGRd/szM0JY6/f4+WMdvmTQ6JFNh3G3MP4qMc6eHGS67v8LhLHG7xuZ5Xnf+x8/aSoZ4545hOcdjexVwor53uFHK+pwf28rQ45vQJdxSdJElLBCGAdK5Gxv0JrZ6tkdwjV+dX3AZ+3zz9vpcFrSNMTh4bJm+ym7T0fTjIUdxs3CeKPkBp+JRp4WU8ayMmmkqiaMj32BLGkSQlha6gNZndkHhLBul8O5SVNQwp1+AcDa3DkMV2U82Zj1TUlxW5UHkoZg+NfKuClpygxSGBKs2f3rM9Y34o6oNuOKMoWoo9QmGnH72VS/6vdlAIbOl0rGkqbUs7XE4sFRMLqdNGylZlWQRhOypGmIw73K+N3a3P80wuakiXQcFoX0kRTCfUnDN+m0zE1m/NDoevYheiVQxm6jSJ7xd7Emo8I0Y6EyPjcw+8VkRPdnP17m5MFAjUD+4ttkVNnpcL6vtBW9YTJnymhtW4uTrLUGQeawWBnvDzsnC+GFkY7k+Y7nCWFT2ePU/vLxeA1RDnzhRxnPCOHHAXPxdmE8td3h5DzviRyxY0odHvW53K81+hVyX9TvFfb7xo776X7GuCVuQ4tEIpFIJBKJRCKRSCQSSWblH4FD0SScrbi9AAAAAElFTkSuQmCC"
+                />
+              </defs>
+            </svg>
+          </th>
+          <td>
+            <a href="tel:3003534323" class="text-decoration-none text-white"
+              ><span>300 3534323 </span></a
+            >
+            -
+            <a href="tel:3226654345" class="text-decoration-none text-white"
+              ><span>322 6654345</span></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="d-flex">
+            <svg
+              width="24"
+              height="30"
+              viewBox="0 0 12 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect
+                width="11.4982"
+                height="17.3738"
+                fill="url(#pattern0_350_650)"
+              />
+              <defs>
+                <pattern
+                  id="pattern0_350_650"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_350_650"
+                    transform="matrix(0.0111111 0 0 0.00735346 0 0.169095)"
+                  />
+                </pattern>
+                <image
+                  id="image0_350_650"
+                  width="90"
+                  height="90"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+          </th>
+          <td>Barrio perdido por la esquina de doña juana cll 23 #26-07</td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <svg
+              width="24"
+              height="30"
+              viewBox="0 0 12 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect
+                width="11.4982"
+                height="17.3738"
+                fill="url(#pattern0_350_651)"
+              />
+              <defs>
+                <pattern
+                  id="pattern0_350_651"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_350_651"
+                    transform="matrix(0.01 0 0 0.00661811 0 0.169095)"
+                  />
+                </pattern>
+                <image
+                  id="image0_350_651"
+                  width="100"
+                  height="100"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFGklEQVR4nO2dSYgdVRSGyzjHeVg4iwZFcFY0Ig44LJOIYLYuRdy4cKEipsWViBtBF0FRaGmROqe6Q2I0IKQ3igpKjBgMUTCJtLH71T312iGO7S+nrU4/2qfd71a9ulXvnQ/OpqGr7j1f3bq3Tg0vigzDMAzDMAzDMAzDMAzDMAzDMIyutLbglIxwvSTY4AgbLbBRc9GOceN0jJMrO2wkwbVCGBPGL8KABbrl4LAQ3nIJruqvDMaTjvG7ScCKDsQ8V0/0S8YmEwHfM8JIqTIc4VaTAe/Ts2P8OTOOy0sTIoQXTAiKzZcxHixTyNMmBIWEZIy7ShPiJnChY4hJgZ8Qwg4AR0WlL3cZe0wKepo7HOPFb17HCVE/wGYcK4xHhfGTicFyMnanhLVRFbQZlwrhXZOCrheFjvAMYhwXVY0w1gvhWxODhVExWery1odsAqfreVLPl8MqxjGcYzwU1QktqjnGJ0MlgvCXI4z+MIazozqCSRyTT/o/DoGMr1PGvVETSGOc7xjJABcMn+vbUraCSf9g6CRKefGBI1wZ1QGMYJXP/0mM0xzjJceYa+yoIGSO8LBPDg7GOFFPbXrWiMpANySMj/JV1JszCc712g5hrWPsCp1c6T1i3z4LYZ0wDnTctLo9KoojvLykgW2J8YjP0aKTvmM81pAr/QN6yvXJmQpUkf8aaYzXoqJ023A+jD9tJbjJZ5utLThPCFSDpKNL0uaEsFmfGei1X1pA1DK7I6T/NdqifgnJpfyhF4U+jc+3vb5jSKPJ9adZxmWOsHOZffRXyJEgTKUJHvDZ/tRWrNZlZOAr/cO+9SctuDrC447w6wr2U5GQxSNsm8S4yGc/WYzrhPFx5aOCsNO3/iSMO4TwZQ/7q1ZIPlp+1iMGMY7udV8YwSqtCQljtu8yCN/73lZtj+EMnWe0dNLjfgMIWRwtu9IYN/uuUhxhtI71p/yBwGnP/YcT0rliSd/AqV77JqxzhP2lyWB85Vt/yu8B7SjYhrBCOk4P3/meHqa2YrVOuEUe0CtSfyq5YFoTIYuJ2SaMiws8wvqhx8Hwvm/9KUtwQ8m3FOolpGPS91tijvQ06bf1yPapKBwaxUl9WorXUMjiaNmdJrjFp03TMc75v0lfR2Ka4IIaXqzWV0ieuDmtBGtF2KdtGeEeIWx3jBkNIbytf/O+h0OY6FdfGyGkIw6V+qhlj/Wnyq59GiTknyBsz2JcUrjRK+1bjKu9FgpDI4Srea5JbxrlS+nfKu5bI4Ugj8/1NYhSDHT2J8adwtgbqE+NFoKFMsfsOM4q2o92jDM9608mREosBB6pPzFaAUUMxgiRpSOGMdliXLHStrfHsUYI74Vu98AKkc5J/x0cv9xNoxq+KTyQQpDHnm4XgVmCu4XxRQ3aN3RCsFCCEcYrGo7wWej2DL0QCZ9kEyLhE2tCJHwyTYiET6AJkfBJMyE1SBRMSPjkwISETwhMSPgkoEYx+Ffq0qwwIRJeggmR8Ik3IRI+2SZEwifYhEj4pJoQCZ9IEyLhk1dPIfpudQ06goEIwqtlCHk2eEd4MEIfzijrSb/gnZFBiBi3FRaib9M6wr7gneHGx16fN5O7kiW4vwYdQqMjwYaoTOxz4/CXQXg+Kpv5D6swNjX5u1dSceS5eqr0r1ovfRvWEcbnv/9Ug05LPUO/jcVCuCaqCn1TVb+cI4T77OeOMP+TT5oLzYm+W1+ZCMMwDMMwDMMwDMMwDMMwDMMwjKhZ/A2PLp5oylOfywAAAABJRU5ErkJggg=="
+                />
+              </defs>
+            </svg>
+          </th>
+          <td>
+            <a
+              href="mailto:legaltech@gmail.com"
+              class="text-decoration-none text-white"
+              ><span> {{ "legaltech@gmail.com" }}</span></a
+            >
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="socialMedia">
+    <p class="text m-0">SIGUENOS</p>
+    <div>
+      <ul class="list-social">
+        <li>
           <a
-            href="mailto:legaltech@gmail.com"
-            class="text-decoration-none text-white"
-            ><span> {{ "legaltech@gmail.com" }}</span></a
-          >
-        </td>
-      </tr>
-    </tfoot>
-  </table>
-</footer>
+            href="https://www.instagram.com/legaltechabogadosdigitales"
+            target="_blank"
+            class="text-decoration-none"
+            ><svg
+              width="25"
+              height="26"
+              viewBox="0 0 12 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect
+                x="-0.000244141"
+                y="0.356445"
+                width="11.7776"
+                height="11.7776"
+                fill="url(#pattern0_350_643)"
+              />
+              <defs>
+                <pattern
+                  id="pattern0_350_643"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use xlink:href="#image0_350_643" transform="scale(0.01)" />
+                </pattern>
+                <image
+                  id="image0_350_643"
+                  width="100"
+                  height="100"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.tiktok.com/@tucuenta"
+            target="_blank"
+            class="text-decoration-none"
+            ><svg
+              width="40"
+              height="40"
+              viewBox="0 0 21 19"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect
+                x="0.404053"
+                width="19.7863"
+                height="18.4908"
+                fill="url(#pattern0_350_644)"
+              />
+              <defs>
+                <pattern
+                  id="pattern0_350_644"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_350_644"
+                    transform="matrix(0.00934524 0 0 0.01 0.0327382 0)"
+                  />
+                </pattern>
+                <image
+                  id="image0_350_644"
+                  width="100"
+                  height="100"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEnElEQVR4nO2cS6gcVRCGj8/oxtfCVYzge+FGMIILwbhVdGNWPuJzL4pG0BAlAaMxyc4XgqBGTVf1DaL4QHwgRhAxIgZiVBRcKDpzakZCbnCR+0uNrYRLzx3vnelzqmfqg1rd212H+qf6nNNdp0JwHMdxHMdxHMdxHMdxHMdxHMdxHMdxZpmfX8JpcS/O65RYKyWu7zHuiIyHImFjZY8LY1uTpj7+88d4UMegY9ExdUusxjtYFaaVfoFzuoS7hLEnEn4UBtpgUcdKeEPF6u/G2aHt9PbirEjYJYyjuYMr49u8EHZIgTNDG/mTcbEQDhkIJCZs3/ULXBTalhlTKgb+FaVVmSKMnQaChkaN8FRoywQ+JXMGRth8Kyb6LuNuA8FCoizZEKyjS9vsgeJk9nqwTmT8ZCBQSGGR8UMwvwMnLMyMIISFXwqcHqwijPNzB0kS2x9zuCRYpU+4MneAJLH1SlwXrCKEG3IHSBJbJKwPVqleIM6aIPcGq0TGAxmD0xdGUWONblIj4/5gFWE8nO2XyvimbkyRsb/hDNkYrCKMR60JIoznGvb9SLBKJDxmTZAeY13DvjcHq0TCVmuCADghMr5uzC9hS7BK9b3alCBKLHF5JPQa8U14IlhFCE9bFETpMC6LhK8a8L09WGXwzdmoIAoKnCQlboyEuUj4fUIZsiNYxbogi4mMV10QFyQdniEzJkhkHBvsvAlv62uRyPhk1COrV+K+WODqur/5I2vlQnQ0sIdLnHt8QLU+apQgOoFXf/9y8PKzwBoXZLysKLXOqy7YyxFk0T2jMPYJ4zef1Je3pHwGm3HisEfkSgWZqM3MspfwAT7GyUv5c0HSCXJUjyuM8ueCpBNk5zAfPcK1QuCqdviAP7ISCNIjXFH31napbxs+hzQlCOFXDX7NvW9d6joXpLkM2Vd7b8b7LkgGQSLjrSGCHBhx3f666yLhzQnNazO67CV8NuTe740QpKy9jvG5CzJehnTqNoNS4JYRQt60+Bq9TyR0XZAxs6RTYu2QX/uztSISdmUrbTX+yJrMJ1zCi0v4uEaPKlf1Vnt0XzL0fxkvNC6I6U+4EypyiIy/xj3p2mdckORoneUihwmXAX2B53HKSsYxmDsYnybIDttlQA0UyhUocOpyxqCFDJHwcgoxzBfKNVFKGgkf6ePnf/kvsEYI7yYUw3YpaYPF1vO6kuoWuGroauqfBcXhxGLYLrZOcRwhMkQI30bCh7p7b6wicRqOI/QK3JkzOJJDkAL3BKtov6ncAZLE1i1xc7CKH/o0hn52zf2LlcSmbaiCVbQtnjcOMEabWvjJuEY4FKyjL/6yB4qT2WvBOoPunvkDhUR2W7CONvUaNIzMHyw0aoQjw0pczZHzaJuks22hLWiDyEGjyOnNjoPdV3BGaBNVmef0iUI42J/DhaGNVJmyfSrmFMIRITzZuswYOtETNugyUdvitWHzGAkLkfC9EHZLgdtbM4GvBG2L1ylwqRYoaL8pbXGkDfFj1RxfCJuabsavPo5vxj8YA2G9jkm7xGm7wtxxchzHcRzHcRzHcRzHcRzHcRzHcRzHcUJO/gajd4GJAXm+YwAAAABJRU5ErkJggg=="
+                />
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/tucuenta"
+            target="_blank"
+            class="text-decoration-none"
+            ><svg
+              width="24"
+              height="24"
+              viewBox="0 0 13 13"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect
+                x="0.816162"
+                y="0.356445"
+                width="11.7776"
+                height="11.7776"
+                fill="url(#pattern0_350_645)"
+              />
+              <defs>
+                <pattern
+                  id="pattern0_350_645"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use xlink:href="#image0_350_645" transform="scale(0.01)" />
+                </pattern>
+                <image
+                  id="image0_350_645"
+                  width="100"
+                  height="100"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="derechos-autor">
+    <p class="text-white text-center mt-3">© 2024 LegalTech | Todos los derechos reservados.</p>
+  </section>
+</div>
