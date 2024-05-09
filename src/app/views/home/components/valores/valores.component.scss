@@ -1,0 +1,71 @@
+.container {
+	width: 80%; /* adjust the width as needed */
+	margin: 40px auto; /* center the container */
+}
+
+.text h3{
+	 width: 100%;
+	 padding: 10px;
+	 font-size: 18px;
+	 text-align: center;
+    color: rgba(97, 19, 116, 1);
+   
+   
+
+}
+.Linea{
+    transform: translate(53px, -12px);
+   }
+
+
+.Container-Valores{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  justify-items: center;
+  align-items: center;
+  height: auto; /* Se ajustará automáticamente según el contenido */
+  max-width: 800px; /* Opcional: establece un ancho máximo */
+  margin: 0 auto; /* Centra el grid horizontalmente */
+  gap: 20px 10px;
+  
+
+  
+    
+}
+
+.item-innovacion{
+    transform: translateX(16px);
+  }
+  
+  .item-prejudicialidad{
+    transform: translateX(18px);
+  }
+
+  .item-celebridad{
+    transform: translateX(36px);
+  }
+
+  .Honestidad{
+    grid-column: span 2;
+    
+    
+  }
+
+  .item-honestidad{
+
+    transform: translateX(62px);
+  }
+
+p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8.99865px;
+    line-height: 12px;
+    text-align: center;
+    
+    color: #611374;
+    
+
+}
+
