@@ -1,0 +1,84 @@
+.container {
+	width: 80%; /* adjust the width as needed */
+	margin: 40px auto; /* center the container */
+}
+
+.text h3{
+	 width: 100%;
+	 padding: 10px;
+	 font-size: 18px;
+	 text-align: center;
+   .Color1{
+    color:rgba(238, 172, 255, 1);
+   }
+   .Color2{
+    color: rgba(97, 19, 116, 1);
+   }
+   
+
+}
+.Linea{
+    transform: translate(54px, -12px);
+   }
+
+
+.button-container {
+    /*background-color: #f0f0f0;  assuming a light gray background */
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+
+    .button-item {
+   
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #611374;
+    border: 3.59816px solid #FFFFFF;
+    background-color: white;
+    border-radius: 16.1569px;
+    box-shadow: 0px -3.79963px 3.03971px rgba(0, 0, 0, 0.03), 0px 3.79963px 3.03971px #CBCBCB;
+    width: 240.59px;
+    height: 65.72px;
+    margin-bottom: 25px;
+    position: relative;
+    margin-left: 40px;
+    padding: 0.5em 1em 0.5em 1em;
+
+
+.imagen-Mayor{
+
+    position: absolute;
+    top: 50%;
+    left: 13.3em;
+    transform: translateY(-50%)
+  }
+
+  }
+
+
+.morado{
+
+    width: 99.76px;
+    height: 65.86px;
+    background: #EEACFF;
+    border-radius: 16.1569px;
+    position: absolute;
+    transform: translate(-12px, -90px);
+    z-index: -1;
+
+    .Iconos{
+      transform: translate(10px, 16px);
+    }
+
+  }
+  
+  }
+
+  
+  

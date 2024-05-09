@@ -1,12 +1,11 @@
 import { CommonModule } from '@angular/common';
 import {
-  AfterViewInit,
   CUSTOM_ELEMENTS_SCHEMA,
   Component,
   OnInit,
   signal,
 } from '@angular/core';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { SwiperContainer, register } from 'swiper/element/bundle';
 import { SwiperOptions } from 'swiper/types';
 import { CarouselImg } from '../constant/carousel-img';
@@ -28,7 +27,7 @@ register();
 
       <picture class="content-pictures" style="height: {{ carouselHeight }};">
         <source srcset="{{img.srcMovil}}" media="(max-width: 425px)" />
-
+        <source srcset="{{img.src}} "media="(min-width: 600px)" />
         <img [src]="img.src" [alt]="img.alt" loading="lazy" />
       </picture>
     </swiper-slide>
@@ -36,18 +35,22 @@ register();
   </swiper-container>`,
   styleUrl: './carousel.component.scss',
 })
-export class CarouselComponent implements OnInit, AfterViewInit {
+export class CarouselComponent implements OnInit {
   public corouselImg: Array<ImgInterface> = CarouselImg;
-  carouselHeight: string = '';
+  public carouselHeight: string = '';
+  private swiperElement = signal<SwiperContainer | null>(null);
+
   constructor(private sanitizer: DomSanitizer) {}
-  ngAfterViewInit() {
+
+  ngOnInit(): void {
+    this.swiperInit();
+    this.renderHeight();
+  }
+
+  renderHeight(): void {
     if (typeof window !== 'undefined') {
       this.carouselHeight = `${window.innerHeight}px `;
     }
-  }
-  swiperElement = signal<SwiperContainer | null>(null);
-  ngOnInit(): void {
-    this.swiperInit();
   }
 
   swiperInit(): void {
@@ -62,7 +65,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
       this.swiperElement()?.initialize();
     }
   }
-  sanitize(html: string) {
+  sanitize(html: string): SafeHtml {
     return this.sanitizer.bypassSecurityTrustHtml(html);
   }
 }
