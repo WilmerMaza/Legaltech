@@ -1,0 +1,34 @@
+@use "@assets/colors.scss" as *;
+
+.swipper-empresa-custom {
+  --swiper-navigation-color: #eeacff;
+  --swiper-pagination-bullet-width: 15.95px;
+  --swiper-pagination-bullet-height: 15.26px;
+  height: 20vh;
+  .swiper-slide {
+    margin: 0 8px;
+    .content-pictures {
+      display: flex;
+      width: auto;
+      height: 100%;
+      justify-content: center;
+
+      img {
+        margin: auto;
+      }
+    }
+  }
+}
+
+@media (width >= 992px) {
+}
+@media (min-width: 768px) {
+}
+
+/* Dispositivos de escritorio pequeños */
+@media (width >= 992px) {
+}
+
+/* Dispositivos de escritorio grandes */
+@media (min-width: 1200px) {
+}

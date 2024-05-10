@@ -1,5 +1,13 @@
-<app-carousel class="h-100"></app-carousel>
+@defer (on immediate) {
+<app-carousel [imagesCarousel]="carouselPrincipal" [textPresent]="true" [pagination]="true" [spacebetween]="0"
+  [slidesPerView]="1" [heightCorousel]="carouselHeight"></app-carousel>
+
+
 <app-servicios></app-servicios>
 <app-identidad></app-identidad>
+<div></div>
 <app-valores></app-valores>
+<app-empresas></app-empresas>
 <app-firma></app-firma>
+} @placeholder {
+<div></div>}
