@@ -58,7 +58,7 @@ export class CarouselComponent implements OnInit {
   @Input() heightCorousel: string = '';
   
   private swiperElement = signal<SwiperContainer | null>(null);
-  colorPrincipal: string = 'blue';
+  
   constructor(private sanitizer: DomSanitizer) {}
   ngOnInit(): void {
     this.swiperInit();
