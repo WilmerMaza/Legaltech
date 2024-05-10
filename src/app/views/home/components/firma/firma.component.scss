@@ -3,39 +3,31 @@
 
 }
 
-.titulo{
-
-font-family: 'Inter';
+.Letras{
+    font-family: "Inter";
     font-style: normal;
+    color: #FFFFFF;
+
+}
+
+.titulo{
     font-weight: 800;
     font-size: 15px;
-    line-height: 18px;
-    text-align: center;
-    color: #FFFFFF;
     position: absolute;
-    top: 12px;
-    left: 50%; /* Mueve el elemento al 50% del ancho del contenedor */
-    transform: translateX(-50%); /* Corrige la posición para centrar horizontalmente */
+    top: 11px;
+    left: 50%;
+    transform: translateX(-50%)
 
 }
 
 .texto{
-    
-    
-    
-    
-    
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 2.6vw;
     line-height: 12px;
     text-align: center;
-    color: #FFFFFF;
     position: absolute;
     top: 38px; 
-    left: 16px; /* Ajusta según sea necesario */
-    
+    left: 16px; 
     
 }
 
@@ -64,6 +56,4 @@ font-family: 'Inter';
     mix-blend-mode: normal;
     background-color: transparent
     
-
-
 }
