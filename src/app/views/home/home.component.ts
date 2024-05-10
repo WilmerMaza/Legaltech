@@ -1,7 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, OnInit } from '@angular/core';
 import { CarouselComponent } from 'src/app/shared/carousel/carousel.component';
-import { SpinnerComponent } from 'src/app/shared/spinner/spinner/spinner.component';
 import { CarouselEmpresasImg } from './components/constant/carousel-empresas-img';
 import { CarouselImg } from './components/constant/carousel-img';
 import { EmpresasComponent } from './components/empresas/empresas.component';
@@ -22,7 +21,6 @@ import { ValoresComponent } from './components/valores/valores.component';
     ValoresComponent,
     EmpresasComponent,
     FirmaComponent,
-    SpinnerComponent,
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
