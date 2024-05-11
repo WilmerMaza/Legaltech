@@ -3,10 +3,14 @@
 	margin: 40px auto; /* center the container */
 }
 
+.text{
+  position: relative;
+  text-align: center;
+  font-size: 1em; /* tamaño base del texto */
+}
 .text h3{
 	 width: 100%;
-	 padding: 10px;
-	 font-size: 18px;
+	 //font-size: 1.5em; /* tamaño del título en relación con el tamaño base */
 	 text-align: center;
    .Color1{
     color:rgba(238, 172, 255, 1);
@@ -18,16 +22,19 @@
 
 }
 .Linea{
-    transform: translate(54px, -12px);
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: 2px; /* Grosor de la línea */
+  background: linear-gradient(to right, rgba(97, 19, 116, 1) 92%, rgba(238, 172, 255, 1)8%); /* Gradiente lineal */
+  display: flex; /* Usar flexbox para centrar */
+  margin: 0 auto; /* Centra horizontalmente */
+  
    }
 
-
 .button-container {
-    /*background-color: #f0f0f0;  assuming a light gray background */
+   
     padding: 1em;
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
     justify-content: center;
     align-items: center;
 
@@ -79,6 +86,73 @@
   }
   
   }
+ 
+ @media screen and (min-width:481px){
+  .Linea{
+    width: 52%;
+   }
+ }
 
-  
+
+@media screen and (min-width: 593px) {
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    justify-content: center;
+  }
+
+  .button-item {
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ajustar al ancho de la celda */
+    height: 100%; /* Ajustar al alto de la celda */
+  }
+
+  .Linea{
+    width: 48%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Estilos específicos para pantallas de hasta 768px de ancho */
+  .text {
+    font-size: 0.9em; /* Disminuye el tamaño del texto */
+  }
+  .Linea {
+    width: 37%; /* Reducir el ancho de la línea */
+  }
+}
+
+@media screen and (min-width:900px){
+  .Linea{
+    width:30%;
+  }
+}
+
+@media screen and (min-width:1130px) {
+ .Linea{
+  width:27%;
+ } 
+}
+
+@media screen and (min-width:1300px) {
+  .Linea{
+   width:25%;
+  } 
+ }
+
+ @media screen and (min-width:1500px) {
+  .Linea{
+   width:20%;
+  } 
+ }
+
+
   
