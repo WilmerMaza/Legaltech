@@ -1,3 +1,4 @@
+//MI CODIGO
 .container {
 	width: 80%; /* adjust the width as needed */
 	margin: 40px auto; /* center the container */
@@ -6,7 +7,7 @@
 .text h3{
 	 width: 100%;
 	 padding: 10px;
-	 font-size: 18px;
+	 font-size: 17px;
 	 text-align: center;
     color: rgba(97, 19, 116, 1);
    
@@ -14,7 +15,12 @@
 
 }
 .Linea{
-    transform: translate(53px, -12px);
+  width: 200px; /* Ajusta el ancho según tus necesidades */
+  height: 2px; /* Grosor de la línea */
+  background: linear-gradient(to right, rgba(97, 19, 116, 1) 92%, rgba(238, 172, 255, 1)8%); /* Gradiente lineal */
+  display: flex; /* Usar flexbox para centrar */
+  margin: 0 auto; /* Centra horizontalmente */
+  
    }
 
 
@@ -27,9 +33,7 @@
   max-width: 800px; /* Opcional: establece un ancho máximo */
   margin: 0 auto; /* Centra el grid horizontalmente */
   gap: 20px 10px;
-  
-
-  
+  align-items: flex-start; /* Alinea verticalmente en la parte superior */
     
 }
 
@@ -42,25 +46,25 @@
   }
 
   .item-celebridad{
-    transform: translateX(36px);
+    transform: translateX(30px);
   }
 
-  .Honestidad{
-    grid-column: span 2;
+   .Honestidad{
+     grid-column: span 2;
     
     
-  }
+   }
 
   .item-honestidad{
 
-    transform: translateX(62px);
+    transform: translateX(52px);
   }
 
 p{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 8.99865px;
+    font-size: 8.5px;
     line-height: 12px;
     text-align: center;
     
@@ -69,3 +73,168 @@ p{
 
 }
 
+@media screen and (min-width:470px) {
+  
+  .Linea{
+    width: 45%;
+   }
+  .Container-Valores{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    justify-items: center;
+    height: auto; /* Se ajustará automáticamente según el contenido */
+    max-width: 800px; /* Opcional: establece un ancho máximo */
+    margin: 0 auto; /* Centra el grid horizontalmente */
+    gap: 20px 10px;
+    align-items: flex-start
+ }
+
+ p{
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.2px;
+  line-height: 12px;
+  text-align: center;
+  
+  color: #611374;
+
+}
+  
+}
+
+
+@media screen and (min-width: 620px){
+
+
+  .Linea{
+    width: 40%;
+  }
+ 
+  
+  p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 12px;
+    text-align: center;
+    
+    color: #611374;
+  
+  }
+  
+  .item-celebridad{
+    transform: translateX(30px);
+  }
+
+  .item-innovacion{
+    transform: translateX(10px);
+  }
+
+  .item-prejudicialidad{
+    transform: translateX(20px);
+  
+  }
+
+  .item-honestidad{
+    transform: translateX(50px);
+  }
+.Prejudicialidad ,.Honestidad{
+  grid-column: span 1;
+  transform: translateX(120px);
+}
+  
+}
+
+
+@media screen and (min-width: 800px) {
+  
+  .Linea{
+    width: 35%;
+  }
+  .text h3{
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+     color: rgba(97, 19, 116, 1);
+ 
+ }
+  .Container-Valores{
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-template-rows: repeat(2, 1fr); /* Dos filas */
+    gap: 25px 80px; /* Espacio entre celdas */
+
+  }
+  
+  
+  p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    
+    color: #611374;
+    width: 131%
+  }
+  
+  .item-celebridad{
+    transform: translateX(90px);
+  }
+
+  .item-innovacion{
+    transform: translateX(60px);
+  }
+
+  .item-prejudicialidad{
+    transform: translateX(73px);
+  
+  }
+
+  .item-honestidad{
+    transform: translateX(85px);
+  }
+.Prejudicialidad {
+  transform: translateX(120px);
+}
+
+.item-responsabilidad{
+  transform: translateX(37px);
+}
+
+.Honestidad{
+  transform: translateX(140px);
+}
+  
+  
+}
+
+
+@media screen and (min-width:900px){
+  .Linea{
+    width:30%;
+  }
+}
+
+@media screen and (min-width:1130px) {
+ .Linea{
+  width:26%;
+ } 
+}
+
+@media screen and (min-width:1300px) {
+  .Linea{
+   width:22%;
+  } 
+ }
+
+ @media screen and (min-width:1500px) {
+  .Linea{
+   width:20%;
+  } 
+ }
